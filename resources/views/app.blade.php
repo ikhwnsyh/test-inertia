@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
     @routes
     @viteReactRefresh
+    @vite('resources/css/app.css')
     @vite('resources/js/app.jsx')
     @inertiaHead
 </head>

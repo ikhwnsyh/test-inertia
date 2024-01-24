@@ -1,12 +1,15 @@
 import React from "react";
+import NavigationBar from "../Component/NavigationBar";
 
 export default function Index({ articles, app_name }) {
     return (
         <div>
+            <NavigationBar />
             {articles.map((article) => (
-                <li key={article.id}>{article.title}</li>
+                <p className=" text-xl" key={article.id}>
+                    {article.title} + {app_name}
+                </p>
             ))}
-            <h1>{app_name}</h1>
         </div>
     );
 }
